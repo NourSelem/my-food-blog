@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family:"Trirong", serif;
+    line-height: 1.5;
+  }
+  a{
+      text-decoration: none;
+  }
+  .container{
+      width: 90%;
+      margin: 100px auto;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;  
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+nav .nav-left a,.nav-right a{
+    font-size: 18px;
+    color: #000;
+    transition: 0.7s;
+    padding: 10px;
+
+}
+nav .nav-left a:hover , .nav-right a:hover{
+    background-color: #ccc;
+
+}
+.Food{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.food{
+    width: 24%;
+}
+.food img{
+    width: 100%;
+}
+.food h5{
+    margin: 10px;
+    font-size: 25px;font-weight: 400;
+    text-align: center;
+}
+.food p{
+    margin: 10px;
+    text-align: center;
+}
+.text p{
+    margin: 10px
+}
+.number{
+    text-align:center
+}
+.Num{
+  margin: 10px;
+}
+.num a{
+    color: black;
+    font-size: 30px;
+}
+.num a:hover{
+   background-color: black;
+   margin: 10px;
+   color: #ccc;
+   
+}
+ hr{
+    margin: 30px;
+    opacity: 0.2;
+}
+.about{
+    width: 60%;
+}
+.about h4{
+    text-align: center;
+    font-weight: 400;
+    margin: 30px;
+    font-size: 25px;
+}
+.about h3{
+    text-align: center;
+    margin: 10px;
+}
+ .i p{
+   text-align: center;
+   font-style: italic;
+   margin: 20px;
+}
+.about p{
+    text-align: center;
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+    
+}
+.footer h4{
+    margin-bottom: 30px;
+   font-size: 25px;
+   font-weight: 400;
+}
+.footer1{
+    width: 48%;
+}
+.footer1 p{
+    font-weight: 400;
+}
+.blog{
+    width: 48%;
+}
+
+
+.Blog{
+    display: flex;
+    gap: 15px;
+    color: black;
+}
+.Blog:hover{
+    background-color: #ccc;
+}
+.Blog img{
+    width: 50px;
+}
+
+@media screen and (max-width : 480px){
+    .Food{
+        margin-top: 50px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .food{
+        width: 100%;
+    }
+    .food img{
+        width: 100%;
+    }
+    .about{
+        width: 90%;
+    }
+    .about img{
+        width: 100%;
+    }
+    .about p{
+        text-align: left;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .i p{
+        text-align: center;
+    }
+    
+}
